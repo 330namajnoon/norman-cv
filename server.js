@@ -1,6 +1,6 @@
 const {Server} = require("sm-express-server");
 
-const server = new Server(4000, "/");
+const server = new Server(4000, "/dist/");
 
 server.addControllers([]);
 

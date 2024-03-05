@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import emailjs from "@emailjs/browser"
-import { AboutMi, AppContainer, CVLink, ContactButton, ContactContainer, Details, FullName, HLine, Icon, Icons, InfoBox, ProfileImage, Title, TransparentBox } from './style'
+import { AboutMi, AppContainer, CVLink, ContactButton, ContactContainer, Details, FullName, HLine, Icon, Icons, InfoBox, Title, TransparentBox } from './style'
 
 function App() {
   const [shiwContact, setShowContact] = useState<boolean>(false);
@@ -11,7 +11,7 @@ function App() {
     }
     const date = new Date();
     const tostring = `${get0(date.getDate())}/${get0(date.getMonth())}/${get0(date.getFullYear())} ${get0(date.getHours())}:${get0(date.getMinutes())}`
-    const response = await emailjs.send("service_1nbwmi8", "template_1rsjlxn", {
+    await emailjs.send("service_1nbwmi8", "template_1rsjlxn", {
       from_name: "TARJETA DE PRESENTACION",
       message: {
         date: tostring,
@@ -22,13 +22,13 @@ function App() {
   }
 
   const copyPhoneNumber = () => {
-    navigator.clipboard.writeText("+34643862337").then((res) => {
+    navigator.clipboard.writeText("+34643862337").then(() => {
       alert("Se ha copiado el numero de telefono");
     })
   }
 
   const copyInstagram = () => {
-    navigator.clipboard.writeText("@sina.majnoonhjk").then((res) => {
+    navigator.clipboard.writeText("@sina.majnoonhjk").then(() => {
       alert("Se ha copiado el Id de usuario");
     })
   }
