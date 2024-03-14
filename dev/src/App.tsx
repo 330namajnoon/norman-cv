@@ -34,7 +34,7 @@ function App() {
   }
 
   return (
-    <AppContainer style={{ backgroundImage: "url(./assets/norman_image.jpg)" }}>
+    <AppContainer style={{ backgroundImage: "url(./assets/norman.PNG)" }}>
       <Details>
         <TransparentBox />
         <InfoBox>
