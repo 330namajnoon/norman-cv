@@ -39,11 +39,8 @@ function App() {
         <TransparentBox />
         <InfoBox>
           <FullName>
-            Norman
+          NOUREDDIN AL HASAN
           </FullName>
-          <Title>
-            Barman
-          </Title>
           <HLine />
           <AboutMi>
             SOBRE MI
