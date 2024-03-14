@@ -90,7 +90,7 @@ Error generating stack: `+o.message+`
     font-weight: 500;
     font-style: italic;
     @media screen and (max-width: 600px) {
-       font-size: 10vw;
+       font-size: 7vw;
     }
 `,s0=me.h1`
     font-size: 10px;

@@ -61,7 +61,7 @@ export const FullName = styled.h1`
     font-weight: 500;
     font-style: italic;
     @media screen and (max-width: 600px) {
-       font-size: 10vw;
+       font-size: 7vw;
     }
 `
 
