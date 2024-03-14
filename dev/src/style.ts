@@ -147,8 +147,8 @@ export const Icon = styled.img`
 `
 
 export const CVLink = styled.a`
-    color: ${colors[0]};
-    background-color: ${colors[2]};
+    color: ${colors[1]};
+    background-color: ${colors[0]};
     border-radius: 5vw;
     padding: 10px 20px;
     margin: 10px;
@@ -158,8 +158,8 @@ export const CVLink = styled.a`
 `
 
 export const ContactButton = styled.button`
-    color: ${colors[0]};
-    background-color: ${colors[2]};
+    color: ${colors[1]};
+    background-color: ${colors[0]};
     border-radius: 5vw;
     padding: 10px 20px;
     margin: 10px;
@@ -185,7 +185,9 @@ export const ContactContainer = styled.div`
         top: 10px;
         left: 10px;
         color: ${colors[0]};
+        
         font-size: 30px;
+        
     }
     @media screen and (max-width: 600px) {
        

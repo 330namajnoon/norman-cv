@@ -22,13 +22,13 @@ function App() {
   }
 
   const copyPhoneNumber = () => {
-    navigator.clipboard.writeText("+34643862337").then(() => {
+    navigator.clipboard.writeText("+34624306214").then(() => {
       alert("Se ha copiado el numero de telefono");
     })
   }
 
   const copyInstagram = () => {
-    navigator.clipboard.writeText("@sina.majnoonhjk").then(() => {
+    navigator.clipboard.writeText("@nour_z.h").then(() => {
       alert("Se ha copiado el Id de usuario");
     })
   }
@@ -48,11 +48,11 @@ function App() {
           <AboutMi>
             SOBRE MI
             <h2>
-              ¡Hola! Soy Norman, un apasionado barman con una amplia experiencia en el sector de la hostelería. Originario de una rica herencia multicultural, mi idioma nativo es el árabe, pero también tengo un excelente dominio del inglés y español. Estas habilidades lingüísticas me han permitido conectar de manera auténtica con una amplia gama de clientes internacionales, creando experiencias memorables para ellos.
+              Soy un profesional de la atención al cliente con una ampliaexperiencia entregando servicios excepcionales y gestionando equipos de manera eficiente. Mi enfoque meticuloso a la hora detrabajar y mi adaptabilidad a entornos dinámicos se alineanperfectamente con los desafíos operativos que puedan surgir ycon las expectativas de calidad en roles exigentes. Mi habilidadpara comunicarme de manera efectiva y trabajar en equipo meposiciona como un candidato ideal para contribuir positivamenteen cualquier entorno laboral.
             </h2>
           </AboutMi>
           <HLine />
-          <CVLink onClick={sendEmail}>
+          <CVLink download="noureddin-cv" href='./assets/Noureddin.CV.pdf' onClick={sendEmail}>
             Download CV
           </CVLink>
           <ContactButton onClick={() => setShowContact(true)}>
@@ -69,10 +69,10 @@ function App() {
           <Title style={{ fontSize: "25px" }}>Contacto</Title>
           <Icons>
             <Icon src='./assets/instagram-logo-icone4.png' onClick={copyInstagram} /> Instagram
-            <Icon src='./assets/LinkedIn_icon_circle.svg.png' onClick={() => open("https://www.linkedin.com/in/sina-majnoon-programador-fullstack")} /> Linkedin
+            {/* <Icon src='./assets/LinkedIn_icon_circle.svg.png' onClick={() => open("https://www.linkedin.com/in/sina-majnoon-programador-fullstack")} /> Linkedin */}
             <Icon src='./assets/whatsapp_icon_130788.png' onClick={copyPhoneNumber} /> Whatsap
-            <Icon src='./assets/gmail-new-icon5198.jpg' onClick={() => open("https://mail.google.com/mail/u/1/#inbox/FMfcgzGxRxDZFtkXqMtvLQWpZHpDrRph?compose=CllgCHrhTxDKGrrlRzcgVwzmcJfQfxjdpsXltNcgDCGBPRTwmwsKPJPQjKCVwwTBZXwGjdxgfcg")} />
-            Gmail
+            <Icon src='./assets/gmail-new-icon5198.jpg' onClick={() => open("https://mail.google.com/mail/u/0/#search/nou?compose=GTvVlcSKjDcxQgdBHcVzWVmFWfXRVHmQtTnNXzCskxBlSSzbTmZwFsnmlbZVBXfxRpsLHvkBqNXnL")} />
+            email
           </Icons>
         </ContactContainer>
       )}
